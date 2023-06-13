@@ -2,6 +2,9 @@
 #include "Matrix.h"
 #include <cstdlib>
 #include <tuple>
+
+#include <unistd.h>
+#include <stdlib.h>
 using namespace std;
 
 //custom non-default ctor
@@ -423,6 +426,24 @@ Matrix Matrix::gaussEli(){
 double Matrix::_(int i, int j){
 
 	return this->A[i][j];}
+
+
+Matrix Matrix::initRand(){
+
+	for( int i = 0; i < numRows; i++){
+	
+		for( int j = 0; j < numCols; j++){
+
+			this->A[i][j] = rand();
+
+			}
+
+		}
+	return *this;
+	}
+
+
+
 
 /*			
 std::tuple<Matrix, Matrix, Matrix, Matrix> lu( Matrix & M){
