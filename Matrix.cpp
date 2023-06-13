@@ -420,6 +420,10 @@ Matrix Matrix::gaussEli(){
 	}
 
 
+double Matrix::_(int i, int j){
+
+	return this->A[i][j];}
+
 /*			
 std::tuple<Matrix, Matrix, Matrix, Matrix> lu( Matrix & M){
 
