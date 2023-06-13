@@ -5,6 +5,8 @@
 
 #include <unistd.h>
 #include <stdlib.h>
+#include <ctime>
+
 using namespace std;
 
 //custom non-default ctor
@@ -430,11 +432,14 @@ double Matrix::_(int i, int j){
 
 Matrix Matrix::initRand(){
 
+	int rnd;
+	srand (time(NULL));
 	for( int i = 0; i < numRows; i++){
 	
 		for( int j = 0; j < numCols; j++){
-
-			this->A[i][j] = rand();
+			rnd =  rand();
+			if (rnd % 2 == 0) this->A[i][j] = 0;
+			else this->A[i][j] = 1;
 
 			}
 
