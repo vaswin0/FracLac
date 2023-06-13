@@ -47,8 +47,8 @@ int countOccupied(Matrix &x, int box){
 
 int main(){
 
-Matrix a(5,5) ;
-a.initMatrix();
+Matrix a(10,10) ;
+a.initRand();
 cout << countOccupied(a,2) << endl;
 return 0;
 
