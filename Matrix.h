@@ -9,9 +9,10 @@ class Matrix{
 	protected:
 
 		double **A;
+	public:
 		int numRows, numCols;
 		
-	public:
+	//public:
 		Matrix();
 		Matrix(int rows, int cols);
 		Matrix(const Matrix & obj); // custim copy ctor
@@ -46,7 +47,7 @@ class Matrix{
 		static Matrix identity(int n);
 
 		friend Matrix partialSwap(Matrix & M, int, int, int, int);
-
+		double _(int , int);
 };
 
 
