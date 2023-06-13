@@ -48,6 +48,7 @@ class Matrix{
 
 		friend Matrix partialSwap(Matrix & M, int, int, int, int);
 		double _(int , int);
+		Matrix initRand();
 };
 
 
