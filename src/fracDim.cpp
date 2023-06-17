@@ -36,6 +36,9 @@ int countOccupied(Matrix &x, int box){
 
 			
 
+double fracdim(x){
+
+	
 
 
 
